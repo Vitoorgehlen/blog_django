@@ -30,7 +30,7 @@ WORKDIR /djangoapp
 # Cria e configura o ambiente virtual
 RUN python -m venv /venv && \
     /venv/bin/pip install --upgrade pip && \
-    /venv/bin/pip install -r requirements.txt
+    /venv/bin/pip install -r /djangoapp/requirements.txt
 
 # Criação do usuário não root para maior segurança
 RUN adduser --disabled-password --no-create-home duser && \
