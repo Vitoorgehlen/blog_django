@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database configuration using dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL', 'postgres://localhost:5432/mydb'),
+        default=os.getenv('DATABASE_URL'),
         conn_max_age=600,
         ssl_require=True
     )
