@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'axes.middleware.AxesMiddleware',
 ]
 
-ROOT_URLCONF = 'djangoapp.urls'
+ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangoapp.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 # Database configuration using dj_database_url
 DATABASES = {
