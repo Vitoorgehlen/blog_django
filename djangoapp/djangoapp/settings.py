@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'djangoapp.wsgi.application'
 
 # Database configuration using dj_database_url
 DATABASES = {
