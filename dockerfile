@@ -28,7 +28,7 @@ COPY djangoapp /djangoapp
 COPY scripts /scripts
 
 # Define o diretório de trabalho
-WORKDIR /djangoapp
+WORKDIR /opt/render/project/src/djangoapp
 
 # Cria e configura o ambiente virtual
 RUN python -m venv /venv && \
