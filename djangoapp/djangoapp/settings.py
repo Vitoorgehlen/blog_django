@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'axes.middleware.AxesMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'djangoapp.urls'
 
 TEMPLATES = [
     {
