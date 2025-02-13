@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.getenv('DEBUG', 0)))
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '.railway.app').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '.onrender.com').split(',')
 
 # Application definition
 INSTALLED_APPS = [
