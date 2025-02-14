@@ -20,20 +20,17 @@ RUN apk add --no-cache \
     zlib-dev \
     build-base
 
-# Copia o requirements.txt da raiz para o container
-COPY requirements.txt /requirements.txt
-
 # Copia os diretórios do projeto para o container
 COPY djangoapp /djangoapp
 COPY scripts /scripts
 
 # Define o diretório de trabalho
-WORKDIR /opt/render/project/src/djangoapp
+WORKDIR /djangoapp
 
 # Cria e configura o ambiente virtual
 RUN python -m venv /venv && \
     /venv/bin/pip install --upgrade pip && \
-    /venv/bin/pip install -r /requirements.txt
+    /venv/bin/pip install -r requirements.txt
 
 # Criação do usuário não root para maior segurança
 RUN adduser --disabled-password --no-create-home duser && \
